@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Estrattore alunni</title>
+    <script>
+
+        let alunni = [
+            {
+                "classe": "3H",
+                "alunni": [
+                    {
+                        "cognome": "ALONCI",
+                        "nome": "ALFONSO PIO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "BELLAVIA",
+                        "nome": "GIUSEPPE",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "BONSIGNORE",
+                        "nome": "PASQUALE SAVIO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "CALANDRA",
+                        "nome": "ALESSIO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "CARUANA",
+                        "nome": "BARBARA",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "CIGNA",
+                        "nome": "GABRIELE",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "DUMITRU POPOVICI",
+                        "nome": "ROBERT",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "EL ANOUARI",
+                        "nome": "LAILA",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "FIANNACA",
+                        "nome": "GIOVANNI",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "GALLEJA",
+                        "nome": "ANTONIO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "GIUFFRIDA",
+                        "nome": "SAMUELE",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "LO PRESTI",
+                        "nome": "MARCO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "MELI",
+                        "nome": "TOMMASO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "MENDOLIA CALELLA",
+                        "nome": "CALOGERO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "NANTELE",
+                        "nome": "LEONARDO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "NOTONICA",
+                        "nome": "GABRIELE",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "PERSICO",
+                        "nome": "DOMENICO CHRISTIAN",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "PUGLISI",
+                        "nome": "CRISTIANO BENEDETTO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "SAIEVA",
+                        "nome": "GABRIELE",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "SCHILLACI",
+                        "nome": "MARIA MORENA",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "SUTERA SARDO",
+                        "nome": "VINCENZO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "TAIBI",
+                        "nome": "SILVIO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "TEDESCO",
+                        "nome": "SALVATORE",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "TRAINA",
+                        "nome": "BEATRICE MARIA",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "VITELLARO",
+                        "nome": "VERONICA",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "ZARBO",
+                        "nome": "GIOVANNI",
+                        "voto": false
+                    }
+                ]
+            },
+            {
+                "classe": "4H",
+                "alunni": [
+                    {
+                        "cognome": "ACQUISTO",
+                        "nome": "SERENA",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "CRAPANZANO",
+                        "nome": "KRISTIAN DANIELE",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "DANELLI",
+                        "nome": "FLAVIO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "DI VINCENZO",
+                        "nome": "LORENZO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "FRANCO JARAMILLO",
+                        "nome": "MATEO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "GALVANO",
+                        "nome": "EMMANUEL",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "ITALIA",
+                        "nome": "FRANCESCO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "LO GRANDE",
+                        "nome": "GIOVANNI",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "MICALEF",
+                        "nome": "FLAVIO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "MOSCATO",
+                        "nome": "FRANCESCO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "PALUMBO",
+                        "nome": "MATTIA",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "PICARELLA",
+                        "nome": "ILARIA",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "PINZELLO",
+                        "nome": "GAETANO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "RANDISI",
+                        "nome": "GIOVANNI",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "ZIRAFA",
+                        "nome": "SIMONE",
+                        "voto": false
+                    }
+                ]
+            },
+            {
+                "classe": "3F",
+                "alunni": [
+                    {
+                        "cognome": "BAGLIERI",
+                        "nome": "DIEGO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "BANDIERA",
+                        "nome": "GIUSEPPE BENEDETTO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "BONGIORNO",
+                        "nome": "GIONATHAN",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "BUTTICE'",
+                        "nome": "EMANUELE",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "COTTONE",
+                        "nome": "VINCENZO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "DI CARO",
+                        "nome": "SALVATORE",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "FERRERA",
+                        "nome": "CALTON",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "GANGAROSSA",
+                        "nome": "ALFONSO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "GIANNONE",
+                        "nome": "EROS",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "GRASSADONIO",
+                        "nome": "SIMONE",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "GUCCIARDINO",
+                        "nome": "SERGIO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "IACOLINO",
+                        "nome": "GIUSEPPE DOMENICO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "INFURNA",
+                        "nome": "KAROLA",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "MANTISI",
+                        "nome": "FLAVIO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "MARINARO",
+                        "nome": "CALOGERO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "MICALIZIO",
+                        "nome": "MATTEO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "MONDELLO",
+                        "nome": "ROSARIO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "TRAVALE",
+                        "nome": "ISMAELE BERNARDO",
+                        "voto": false
+                    }
+                ]
+            },
+            {
+                "classe": "4F",
+                "alunni": [
+                    {
+                        "cognome": "BURGIO",
+                        "nome": "MANUEL",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "CINQUE",
+                        "nome": "LORIS CIRO PIO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "FONTANA",
+                        "nome": "ANDREA",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "IACONO",
+                        "nome": "GIOVANNI",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "LENTINI",
+                        "nome": "SETTIMO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "MICCICHE'",
+                        "nome": "CHRISTIAN EMANUELE",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "MICELI",
+                        "nome": "CRISTIAN",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "NOTO",
+                        "nome": "CAMPANELLA ALFONSO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "PROIETTO",
+                        "nome": "MICHELE DOMENICO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "SALVO",
+                        "nome": "GIUSEPPE",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "SARDO",
+                        "nome": "SILVIO KAROL",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "VACCARELLO",
+                        "nome": "CALOGERO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "VECCHIO",
+                        "nome": "VINCENZO",
+                        "voto": false
+                    }
+                ]
+            },
+            {
+                "classe": "5F",
+                "alunni": [
+                    {
+                        "cognome": "BONGIORNO",
+                        "nome": "FEDERICO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "BURGIO",
+                        "nome": "DAVIDE",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "CEFALU'",
+                        "nome": "STEFANIA",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "CIOFALO",
+                        "nome": "SALVATORE LUIGI",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "CIULLA",
+                        "nome": "GABRIELE",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "COLLURA",
+                        "nome": "CRISTIANO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "CRAPA",
+                        "nome": "AURORA",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "CRAPANZANO",
+                        "nome": "GIUSEPPE",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "FORTUNATO",
+                        "nome": "DANILO CALOGERO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "GALLO CASSARINO",
+                        "nome": "ALESSIO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "MICELI",
+                        "nome": "FABIANA",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "NOTARSTEFANO",
+                        "nome": "MATTEO GIOACCHINO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "PASSARELLO",
+                        "nome": "FRANCESCO",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "PIERINI",
+                        "nome": "GABRIEL",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "PISANO",
+                        "nome": "MARTIN SAMUEL",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "PLANO",
+                        "nome": "ANDREA",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "SEMINERIO",
+                        "nome": "GIORDANO MARIA",
+                        "voto": true
+                    },
+                    {
+                        "cognome": "STRAZZERI",
+                        "nome": "MARCO",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "VALENTE",
+                        "nome": "SIMONE MARIA",
+                        "voto": false
+                    },
+                    {
+                        "cognome": "VOLPE",
+                        "nome": "GIULIANO",
+                        "voto": true
+                    }
+                ]
+            }
+
+        ];
+
+        function estrai() {
+            let classe = document.getElementById("classe").value;
+            let alunniClasse = alunni.find((x) => (x.classe == classe)).alunni;
+            let alunniClasseSenzaVoto = alunniClasse.filter((x) => (!x.voto));
+            let numeroAlunni = alunniClasseSenzaVoto.length;
+            let numeroEstratto = Math.floor(Math.random() * numeroAlunni);
+            let alunnoEstratto = alunniClasseSenzaVoto[numeroEstratto];
+            document.getElementById("alunno").innerHTML = alunnoEstratto.cognome + " " + alunnoEstratto.nome;
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">ESTRATTORE ALUNNI</h1>
+    <div style="text-align: center;">
+        <label for="classe">Scegliere la classe:</label>
+        <select name="classe" id="classe">
+            <option value="3H" selected="selected">TPSIT - 3H</option>
+            <option value="4H">TPSIT - 4H</option>
+            <option value="3F">SISTEMI E RETI - 3F</option>
+            <option value="4F">SISTEMI E RETI - 4F</option>
+            <option value="5F">SISTEMI E RETI - 5F</option>
+          </select>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <button onclick="estrai();" style="font-size: 30px;">ESTRAI!</button>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div style="text-align: center;">
+        <h2>L'algoritmo ha estratto l'alunno/a:</h2>
+        <h1 id="alunno" style="font-size: 80px; color: blue;"></h1>
+    </div>
+</body>
